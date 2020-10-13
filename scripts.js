@@ -161,32 +161,23 @@ Winter Orb
 Wintertide Brand`.split('\n').sort(function(a,b){
     return a.localeCompare(b);
 });
-console.log(classes);
 let ascendencies = `Slayer, Champion, Gladiator, Assasin, Trickster, Saboteur, Juggernaut, Berserker, Chieftain, Necromancer, Occultist, Elementalist, Deadeye, Raider, Pathfinder, Inquisitor, Heirophant, Guardian, Ascendant`;
 
 function readyNow() {
-  $('#getClasses').on('click', getClasses);
+  $('#getSkills').on('click', getSkills);
+  $('#getClass').on('click', getClass);
     
 }
 
-function openInfo(evt, infotype) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(infotype).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-
-function getClasses(evt) {
+function getSkills(evt) {
   let number = $('#numberOfClasses').val();
   for(let i=0; i< number; i++){
     let randomClass = classes[Math.floor(Math.random() * classes.length)]
-    $('#classResults').append(`${randomClass}<br>`)
+    $('#skillResults').empty();
+    $('#skillResults').append(`${randomClass}<br>`);
   }
+ function getClass(evt) {
+    $('#classResults').empty();
+    $('#classResults').append(`${ascendencies[Math.floor(Math.random() * ascendencies.length)]}`);
+ }
 }
