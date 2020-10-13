@@ -7,21 +7,3 @@ body {
 .mainbody {
   font-size: 25px;
 }
-
-.tab {
-  width: 325px;
-  margin: auto;
-}
-.tablinks {
-  border-radius: 12px;
-}
-
-.tabcontent {
-  width: 800px;
-  margin: auto;
-}
-
-@keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
