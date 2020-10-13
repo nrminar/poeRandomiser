@@ -8,32 +8,21 @@
     <script src="scripts.js"></script>
   </head>
   <body>
+    <body>
+    <h1>Prepare Your Body</h1>
     <div class="tab">
       <button class="tablinks" onclick="openInfo(event, 'mainSkills')" id="default">Main Skill</button>
       <button class="tablinks" onclick="openInfo(event, 'ascendancy')">Ascendancy</button>
     </div>
     <div id="mainSkills" class="tabcontent">
-      <h2>Experience</h2>
+      <input type="text" id="numberOfClasses">
+      <button id="getClasses">
+        Get Classes
+      </button>
+      <div id="classResults"></div>
     </div>
     <div id="ascendancy" class="tabcontent">
     </div>
-    <script>
-      function openInfo(evt, infotype) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(infotype).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-    </script>
-    <script>
-      document.getElementById("default").click();
-    </script>
+  </body>
   </body>
 </html>
