@@ -1,64 +1,19 @@
 <!doctype html>
 <!-- Nolan Minar -->
-<!-- Welcome to my first website! -->
 <html>
   <head>
-    <title>My Prime Application</title>
+    <title>Build Randomiser</title>
     <link rel="stylesheet" href="main.css"/>
   </head>
   <body>
-    <div class="personalinfo">
-      <div class="name">
-        Nolan Minar
-      </div>
-      <div class="mainbody">
-        7210 Galpin Blvd Excelsior, MN 55331
-        <br>
-        nrminar@gmail.com
-        <br>
-        952-486-9792
-      </div>
-      <div class="aboutme">
-        <p>I am an individual that loves to learn new things and try new ideas. My passion is science and technology and the cool things you can do with them. I excel at problem solving and working with those around me.</p>
-      </div>
-    </div>
     <div class="tab">
-      <button class="tablinks" onclick="openInfo(event, 'Experience')" id="default">Experience</button>
-      <button class="tablinks" onclick="openInfo(event, 'Education')">Education</button>
-      <button class="pynimation" onclick="window.open('https://github.com/nrminar/nrminar.github.io/blob/master/MyCoolPythonAnimation','_blank');" type="button">Python Animation</button>
+      <button class="tablinks" onclick="openInfo(event, 'mainSkills')" id="default">Main Skill</button>
+      <button class="tablinks" onclick="openInfo(event, 'ascendancy')">Ascendancy</button>
     </div>
-    <div id="Experience" class="tabcontent">
+    <div id="mainSkills" class="tabcontent">
       <h2>Experience</h2>
-      <div class="jobs">
-          <div class="date">(August 2017 - April 2019)</div>
-          <h3>Oreilly Auto Parts</h3>
-      </div>
-      <h4>Counter/Sales</h4>
-      <p>Responsible for maintaing store appearence, customer service, sales, and product ordering.</p>
-      <h4>Retail Service Specialist</h4>
-      <p>After a couple of months on the counter I was promoted to RSS and given keys to the store, now responsible for opening and closing the store, store operations, managing team members, training new team members, and solving problems that the store would run into while in operation.</p>
-      <div class="jobs">
-          <div class="date">(November 2016 - August 2017)</div>
-          <h3>Valvoline Instant Oil Change </h3>
-      </div>
-      <h4>Auto Technician</h4>
-      <p>Responsible for maintaing store appearence, performing services on customers vehicles, customer service, and sales.</p>
-      <h4>Senior Technician</h4>
-      <p>After a few months as an auto tech I was promoted to senior technician and was given keys to the store, now responsible for balancing the stores cash, other store operations, opening and closing, training new team members, and managing team members</p>
-      <div class="jobs">
-          <div class="date">( -Feburary 2015)</div>
-          <h3>Cedar Summit Farm</h3>
-      </div>
-      <h4>Farm Hand</h4>
-      <p>The business was family owned and operated so I was responsible for anything my grandfather saw fit including, milking, feeding, and moving cows, maintenence of farm equipment and infrastructure.</p>
-  
     </div>
-    <div id="Education" class="tabcontent">
-      <h2>Education</h2>
-      <h3>St. Cloud State University- Computer Science (2018-2019)</h3>
-      <h3>University of Wisconsin Milwaukee- Physics(2015-2016)</h3>
-      <h3>University of Minnesota Mankato- Post Secondary Enrollment Options Senior year of high school</h3>
-      <h3>New Prague High School- Graduated 2015</h3>
+    <div id="ascendancy" class="tabcontent">
     </div>
     <script>
       function openInfo(evt, infotype) {
