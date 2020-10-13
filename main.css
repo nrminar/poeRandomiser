@@ -2,6 +2,7 @@ body {
   background-image: url(https://www.pixelstalk.net/wp-content/uploads/images1/1920x1080-backgrounds-path-of-exile-game-download.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   font: 20px Calibri, Sans-Serif;
   color:  #C1EAEA;
 }
