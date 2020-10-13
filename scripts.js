@@ -2,7 +2,6 @@
 $(document).ready(readyNow);
 let skills = 
 `Animate Weapon
-Arctic Armour
 Artillery Ballista
 Barrage
 Bear Trap
@@ -59,7 +58,6 @@ Venom Gyre
 Viper Strike
 Volatile Dead
 Wild Strike
-Withering Step
 Ancestral Protector
 Ancestral Warchief
 Animate Guardian
@@ -67,7 +65,6 @@ Bladestorm
 Chain Hook
 Cleave
 Consecrated Path
-Devouring Totem
 Dominating Blow
 Earthquake
 Earthshatter
@@ -147,7 +144,7 @@ Storm Burst
 Storm Call
 Stormbind
 Stormblast Mine
-Summon Carrion Golem
+Summon Golems
 Summon Raging Spirit
 Summon Skeletons
 Void Sphere
