@@ -2,27 +2,9 @@ body {
   background: url(http://www.webdesigndev.com/wp-content/uploads/2015/02/Subtle-Light-Tile-Pattern-Vol5.jpg);
   font: 20px Calibri, Sans-Serif;
 }
-.personalinfo {
-  width: 800px;
-  margin: auto;
-}
-.name {
-  font: 40px Arial, Sans-Serif;
-  padding-bottom: 10px;
-}
 
 .mainbody {
   font-size: 25px;
-}
-.aboutme {
-  font-size: 20px;
-  border-bottom: 1px solid #999;
-}
-.jobs {
-  border-top: 1px solid #999;
-}
-#education {
-  border-bottom: 1px solid #999;
 }
 
 .tab {
@@ -32,18 +14,10 @@ body {
 .tablinks {
   border-radius: 12px;
 }
-.pynimation {
-  border-radius: 12px;
-}
 
 .tabcontent {
   width: 800px;
   margin: auto;
-  animation: fadeEffect 1s;
-}
-.date {
-  float: right;
-  padding-top: 22px;
 }
 
 @keyframes fadeEffect {
