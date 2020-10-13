@@ -165,8 +165,8 @@ let ascendencies = `Slayer, Champion, Gladiator, Assasin, Trickster, Saboteur, J
 
 function readyNow() {
     console.log(skills)
-  $('#getSkills').on('click', getSkills);
-  $('#getClass').on('click', getClass);
+  $('#randomSkills').on('click', getSkills);
+  $('#randomClass').on('click', getClass);
 }
 
 function getSkills(evt) {
