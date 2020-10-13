@@ -8,21 +8,21 @@
     <script src="scripts.js"></script>
   </head>
   <body>
-    <body>
     <h1>Prepare Your Body</h1>
-    <div class="tab">
-      <button class="tablinks" onclick="openInfo(event, 'mainSkills')" id="default">Main Skill</button>
-      <button class="tablinks" onclick="openInfo(event, 'ascendancy')">Ascendancy</button>
-    </div>
-    <div id="mainSkills" class="tabcontent">
-      <input type="text" id="numberOfClasses">
-      <button id="getClasses">
-        Get Classes
+    <div id="mainSkills">
+      <h1>Main Skill<h1>
+      <button id="getSkills">
+        Roll
       </button>
+      <input type="text" id="numberOfClasses">
       <div id="classResults"></div>
     </div>
-    <div id="ascendancy" class="tabcontent">
+    <div id="classes">
+      <h1>Classes<h1>
+      <button id="getClasses">
+        Roll
+      </button>
+      <div id="ascendancyResults"></div>
     </div>
-  </body>
   </body>
 </html>
