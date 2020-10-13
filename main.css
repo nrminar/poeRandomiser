@@ -1,9 +1,45 @@
 body {
-  background: url(https://www.pixelstalk.net/wp-content/uploads/images1/1920x1080-backgrounds-path-of-exile-game-download.jpg);
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/images1/1920x1080-backgrounds-path-of-exile-game-download.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   font: 20px Calibri, Sans-Serif;
-  margin: auto;
+  color:  #C1EAEA;
 }
 
-.mainbody {
+#content {
+  padding: '100px 0';
+  width: 50%;
+  margin: auto;
+  margin-top: 300px;
+  text-align: center;
+  background-color: rgba(255,255,255,.3);
+}
+
+.header {
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+.skills, #class {
+  color: #FFF8B7;
   font-size: 25px;
 }
+
+button {
+  color: #264F7D;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid #264F7D;
+  border-radius: 10px;
+}
+
+input {
+  padding: 0.5em;
+  color: #000001;
+  background: #C7D1E6;
+  border: none;
+  border-radius: 5px;
+}
+
+

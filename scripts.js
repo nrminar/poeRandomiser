@@ -1,7 +1,7 @@
 
 $(document).ready(readyNow);
 let skills = 
-    `Animate Weapon
+`Animate Weapon
 Arctic Armour
 Artillery Ballista
 Barrage
@@ -158,27 +158,45 @@ Void Sphere
 Vortex
 Wave of Conviction
 Winter Orb
-Wintertide Brand`.split('\n').sort(function(a,b){
-    return a.localeCompare(b);
-});
-let ascendencies = `Slayer, Champion, Gladiator, Assasin, Trickster, Saboteur, Juggernaut, Berserker, Chieftain, Necromancer, Occultist, Elementalist, Deadeye, Raider, Pathfinder, Inquisitor, Heirophant, Guardian, Ascendant`;
+Wintertide Brand`.split('\n')
+let ascendencies = 
+`Slayer
+Champion
+Gladiator
+Assasin
+Trickster
+Saboteur
+Juggernaut
+Berserker
+Chieftain
+Necromancer
+Occultist
+Elementalist
+Deadeye
+Raider
+Pathfinder
+Inquisitor
+Heirophant
+Guardian
+Ascendant`.split('\n');
 
 function readyNow() {
-    console.log(skills)
   $('#randomSkills').on('click', getSkills);
   $('#randomClass').on('click', getClass);
+  $('#numberOfSkills').val('1')
 }
 
 function getSkills(evt) {
   let number = $('#numberOfSkills').val();
-  for(let i=0; i< number; i++){
-    let randomSkill = skills[Math.floor(Math.random() * skills.length)]
-    console.log(randomSkill)
+  if(number && typeof parseInt(number) === "number"){
     $('#skillResults').empty();
-    $('#skillResults').append(`${randomSkill}<br>`);
+    for(let i=0; i< number; i++){
+      let randomSkill = skills[Math.floor(Math.random() * skills.length)]
+      $('#skillResults').append(`<div class="skills">${randomSkill}</div>`);
+    }
   }
- function getClass(evt) {
-    $('#classResults').empty();
-    $('#classResults').append(`${ascendencies[Math.floor(Math.random() * ascendencies.length)]}`);
- }
+}
+function getClass(evt) {
+  $('#classResults').empty();
+  $('#classResults').append(`<div id="class">${ascendencies[Math.floor(Math.random() * ascendencies.length)]}</div>`);
 }
