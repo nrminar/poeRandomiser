@@ -89,10 +89,6 @@ Static Strike
 Sunder
 Sweep
 Tectonic Slam
-Vaal Ancestral Warchief
-Vaal Earthquake
-Vaal Glacial Hammer
-Vaal Ground Slam
 Vengeance
 Vigilant Strike
 Arc
@@ -178,6 +174,11 @@ Pathfinder
 Inquisitor
 Heirophant
 Guardian
+Ascendant
+Ascendant
+Ascendant
+Ascendant
+Ascendant
 Ascendant`.split('\n');
 
 function readyNow() {
