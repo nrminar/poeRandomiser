@@ -161,13 +161,12 @@ Winter Orb
 Wintertide Brand`.split('\n').sort(function(a,b){
     return a.localeCompare(b);
 });
-console.log(skills)
 let ascendencies = `Slayer, Champion, Gladiator, Assasin, Trickster, Saboteur, Juggernaut, Berserker, Chieftain, Necromancer, Occultist, Elementalist, Deadeye, Raider, Pathfinder, Inquisitor, Heirophant, Guardian, Ascendant`;
 
 function readyNow() {
+    console.log(skills)
   $('#getSkills').on('click', getSkills);
   $('#getClass').on('click', getClass);
-    
 }
 
 function getSkills(evt) {
