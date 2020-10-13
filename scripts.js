@@ -161,6 +161,7 @@ Winter Orb
 Wintertide Brand`.split('\n').sort(function(a,b){
     return a.localeCompare(b);
 });
+console.log(skills)
 let ascendencies = `Slayer, Champion, Gladiator, Assasin, Trickster, Saboteur, Juggernaut, Berserker, Chieftain, Necromancer, Occultist, Elementalist, Deadeye, Raider, Pathfinder, Inquisitor, Heirophant, Guardian, Ascendant`;
 
 function readyNow() {
@@ -173,6 +174,7 @@ function getSkills(evt) {
   let number = $('#numberOfSkills').val();
   for(let i=0; i< number; i++){
     let randomSkill = skills[Math.floor(Math.random() * skills.length)]
+    console.log(randomSkill)
     $('#skillResults').empty();
     $('#skillResults').append(`${randomSkill}<br>`);
   }
