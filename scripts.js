@@ -1,6 +1,6 @@
 
 $(document).ready(readyNow);
-let classes = 
+let skills = 
     `Animate Weapon
 Arctic Armour
 Artillery Ballista
@@ -170,11 +170,11 @@ function readyNow() {
 }
 
 function getSkills(evt) {
-  let number = $('#numberOfClasses').val();
+  let number = $('#numberOfSkills').val();
   for(let i=0; i< number; i++){
-    let randomClass = classes[Math.floor(Math.random() * classes.length)]
+    let randomSkill = skills[Math.floor(Math.random() * skills.length)]
     $('#skillResults').empty();
-    $('#skillResults').append(`${randomClass}<br>`);
+    $('#skillResults').append(`${randomSkill}<br>`);
   }
  function getClass(evt) {
     $('#classResults').empty();
