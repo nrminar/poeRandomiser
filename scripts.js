@@ -174,6 +174,11 @@ Pathfinder
 Inquisitor
 Heirophant
 Guardian
+Ascendant
+Ascendant
+Ascendant
+Ascendant
+Ascendant
 Ascendant`.split('\n');
 
 function readyNow() {
