@@ -11,7 +11,7 @@ body {
   padding: '100px 0';
   width: 50%;
   margin: auto;
-  margin-top: 300px;
+  margin-top: 150px;
   text-align: center;
   background-color: rgba(255,255,255,.3);
 }
@@ -41,6 +41,24 @@ input {
   background: #C7D1E6;
   border: none;
   border-radius: 5px;
+}
+
+.classSelections {
+  color: #006699;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid #006699;
+  border-radius: 10px;
+}
+
+.classDeSelections {
+  color: #ff6600;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid #ff6600;
+  border-radius: 10px;
 }
 
 
