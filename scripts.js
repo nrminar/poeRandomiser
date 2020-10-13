@@ -198,5 +198,5 @@ function getSkills(evt) {
 }
 function getClass(evt) {
   $('#classResults').empty();
-  $('#classResults').append(`<div id="class">${ascendencies[Math.floor(Math.random() * ascendencies.length)]}</div>`);
+  $('#classResults').append(`<div id="class">${ascendencies[Math.floor(Math.random() * ascendencies.length)]}</div><img src="https://i.imgflip.com/4ie36w.jpg">`);
 }
