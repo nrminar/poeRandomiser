@@ -1,0 +1,20 @@
+let ascendencies = 
+`Slayer
+Champion
+Gladiator
+Assasin
+Trickster
+Saboteur
+Juggernaut
+Berserker
+Chieftain
+Necromancer
+Occultist
+Elementalist
+Deadeye
+Raider
+Pathfinder
+Inquisitor
+Heirophant
+Guardian
+Ascendant`.split('\n');
