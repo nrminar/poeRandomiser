@@ -61,4 +61,12 @@ input {
   border-radius: 10px;
 }
 
+#bubbles {
+  position: fixed;
+  z-index: -50;
+  top: 0;
+  left: 0;
+  opacity:0.3
+}
+
 
