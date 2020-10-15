@@ -8,7 +8,7 @@ function readyNow() {
 
   for(a of ascendencies) {
     // $('#classOptions').append(`<button type="checkbox" id="${a}" class="classSelections">${a}</button>`)
-    $('#classOptions').append(`<img src="${imageMap[a]}" id="${a}" border-radius: 50%; />`);
+    $('#classOptions').append(`<img src="./assets/images/${a}.webp" id="${a}" style="max-width: 150px;" />`);
     $(`#${a}`).on('click', selectDeselectClass);
   }
 }
@@ -26,7 +26,7 @@ function getSkills(evt) {
 function getClass(evt) {
   $('#classResults').empty();
   let randomClass = ascendencies[Math.floor(Math.random() * ascendencies.length)];
-  $('#classResults').append(`<div id="class">${randomClass} <a class="skillLink" href="https://pathofexile.gamepedia.com/${randomClass.replace(" ", "_")}" target="_blank">Wiki<a></div><img src=${imageMap[randomClass]}>`);
+  $('#classResults').append(`<div id="class">${randomClass} <a class="skillLink" href="https://pathofexile.gamepedia.com/${randomClass.replace(" ", "_")}" target="_blank">Wiki<a></div><img style="max-width: 400px;" src="./assets/images/${randomClass}.webp">`);
 }
 function selectDeselectClass(evt) {
   $(evt.target).toggleClass('skillSelection');

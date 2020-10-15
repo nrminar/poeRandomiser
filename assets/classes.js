@@ -2,7 +2,7 @@ let ascendencies =
 `Slayer
 Champion
 Gladiator
-Assasin
+Assassin
 Trickster
 Saboteur
 Juggernaut
@@ -15,6 +15,6 @@ Deadeye
 Raider
 Pathfinder
 Inquisitor
-Heirophant
+Hierophant
 Guardian
 Ascendant`.split('\n');
