@@ -43,22 +43,8 @@ input {
   border-radius: 5px;
 }
 
-.classSelections {
-  color: #006699;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid #006699;
-  border-radius: 10px;
-}
-
-.classDeSelections {
-  color: #ff6600;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid #ff6600;
-  border-radius: 10px;
+.skillSelection {
+  opacity: 0.3;
 }
 
 #bubbles {
@@ -69,4 +55,13 @@ input {
   opacity:0.3
 }
 
+.skillLink:link {
+  color: #FFF8B7;
+}
+.skillLink:hover {
+  color: #FFF16B
+}
+.skillLink:visited {
+  color: #FFA76B
+}
 
